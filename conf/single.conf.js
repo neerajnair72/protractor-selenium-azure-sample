@@ -15,7 +15,8 @@ exports.config = {
     'video': true,
     'network': true,
     'console': true,
-    'visual': true
+    'visual': true,
+    'tunnel': true
   },
   onPrepare: () => {
 
