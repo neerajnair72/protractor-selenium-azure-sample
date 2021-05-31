@@ -14,6 +14,10 @@ variables:
   LT_ACCESS_KEY: 'Your LambdaTest Access Key'
 
 steps:
+- task: configuration@1
+  inputs:
+    connection: 'Tunnel'
+    isTunnelActivate: false
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -25,3 +29,5 @@ steps:
     cd conf
     protractor single.conf.js
   displayName: 'npm install and build'
+
+- task: stoptunnel@1
