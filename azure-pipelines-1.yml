@@ -1,8 +1,5 @@
 # Node.js
-- task: configuration@1
-  inputs:
-    connection: 'Tunnel'
-    isTunnelActivate: true
+
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -14,6 +11,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: configuration@1
+  inputs:
+    connection: 'Tunnel'
+    isTunnelActivate: true
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
