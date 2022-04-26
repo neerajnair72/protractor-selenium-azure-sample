@@ -10,8 +10,8 @@ pool:
   vmImage: 'Ubuntu-latest'
 
 variables:
-  LT_USERNAME: 'neerajn'
-  LT_ACCESS_KEY: 'qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo'
+  LT_USERNAME: LT_USERNAME
+  LT_ACCESS_KEY: LT_ACCESS_KEY
 
 steps:
 
