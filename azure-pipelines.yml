@@ -10,8 +10,8 @@ pool:
   vmImage: 'Ubuntu-latest'
 
 variables:
-  LT_USERNAME: LT_USERNAME
-  LT_ACCESS_KEY: LT_ACCESS_KEY
+  LT_USERNAME: neerajn
+  LT_ACCESS_KEY: qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo
 
 steps:
 
@@ -20,10 +20,12 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+
 - task: configuration@1
   inputs:
-    connection: 'Tunnel'
+    connection: 'Demo Tunnel'
     isTunnelActivate: true
+  
     
 - script: |
     npm install
