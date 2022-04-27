@@ -25,6 +25,7 @@ steps:
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
+    tunnelOptions: '{"verbose"}'
   
     
 - script: |
