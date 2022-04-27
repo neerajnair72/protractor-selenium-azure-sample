@@ -22,8 +22,10 @@ steps:
 
 - task: configuration@1
   inputs:
-    connection: 'Tunnel'
+    connection: 'Demo Tunnel'
     isTunnelActivate: true
+    tunnelOptions: '{"verbose"}'
+  
     
 - script: |
     npm install
