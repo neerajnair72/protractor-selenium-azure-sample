@@ -7,32 +7,25 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Ubuntu-latest'
+  vmImage: ubuntu-latest
 
-variables:
-  LT_USERNAME: 'neerajn'
-  LT_ACCESS_KEY: 'qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo'
 
 steps:
-
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-
 - task: configuration-stage@1
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
-  
-    
+
 - script: |
     npm install
     npm install -g protractor
     cd conf
-    protractor parallel_local.conf.js
+    protractor parallel.conf.js
   displayName: 'npm install and build'
-
 
 - task: stoptunnel-stage@1
