@@ -10,8 +10,8 @@ pool:
   vmImage: 'Ubuntu-latest'
 
 variables:
-  LT_USERNAME: 'Your LambdaTest Username'
-  LT_ACCESS_KEY: 'Your LambdaTest Access Key'
+  LT_USERNAME: 'neerajn'
+  LT_ACCESS_KEY: 'qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo'
 
 steps:
 
@@ -20,11 +20,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- task: configuration@1
+- 
+- task: configuration-stage@1
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
-    tunnelOptions: '{"verbose":true, "logFile":"lt.log"}'
   
     
 - script: |
@@ -34,4 +34,5 @@ steps:
     protractor single.conf.js
   displayName: 'npm install and build'
 
-- task: stoptunnel@1
+
+- task: stoptunnel-stage@1
