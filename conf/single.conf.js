@@ -4,7 +4,6 @@ accessKey=  'qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo',
 
 exports.config = {
   'specs': ['../specs/single.js'],
-  'specs': ['../specs/parallel.js'],
 
   seleniumAddress: 'https://'+ username +':'+ accessKey  +'@hub.lambdatest.com/wd/hub',
 
