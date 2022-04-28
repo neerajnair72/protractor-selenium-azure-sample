@@ -21,11 +21,10 @@ steps:
   displayName: 'Install Node.js'
 
 
-- task: configuration@1
+- task: configuration-stage@1
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
-    tunnelOptions: '{verbose}'
   
     
 - script: |
@@ -35,4 +34,4 @@ steps:
     protractor single.conf.js
   displayName: 'npm install and build'
 
-- task: stoptunnel@1
+- task: stoptunnel-stage@1
