@@ -1,5 +1,5 @@
-username= "neerajn",
-accessKey=  "qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo",
+username= 'neerajn',
+accessKey=  'qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo',
 
 exports.config = {
   'specs': [ '../specs/local.js' ],
