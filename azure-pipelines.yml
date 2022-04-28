@@ -31,7 +31,7 @@ steps:
     npm install
     npm install -g protractor
     cd conf
-    protractor single.conf.js
+    protractor parallel_local.conf.js
   displayName: 'npm install and build'
 
 
