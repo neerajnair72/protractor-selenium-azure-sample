@@ -20,7 +20,7 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- 
+
 - task: configuration-stage@1
   inputs:
     connection: 'Demo Tunnel'
