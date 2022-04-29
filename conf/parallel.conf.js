@@ -30,7 +30,7 @@ exports.config = {
     'platform': 'WIN10'
   },{
     'browserName': 'Internet explorer',
-    'version':'10.0',
+    'version':'11.0',
     'platform': 'WIN10'
   }],
 
