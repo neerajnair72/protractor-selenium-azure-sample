@@ -19,7 +19,7 @@ exports.config = {
   },{
     'browserName': 'Safari',
     'version':'11.0',
-    'platform': 'macOS 10.12'
+    'platform': 'macOS High Sierra'
   },{
     'browserName': 'Edge',
     'version':'15.0',
