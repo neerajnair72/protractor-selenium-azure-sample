@@ -18,7 +18,7 @@ exports.config = {
     'platform': 'WIN10'
   },{
     'browserName': 'Safari',
-    'version':'11.1',
+    'version':'11.0',
     'platform': 'macOS 10.12'
   },{
     'browserName': 'Edge',
