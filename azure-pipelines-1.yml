@@ -15,18 +15,22 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+  
 - task: configuration-stage@1
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
     tunnelOptions: '{"mitm":true,"tunnelName":"Neeraj"}'
+  
 
 - script: |
     npm install
     npm install -g protractor
     cd conf
     protractor parallel.conf.js
-    continueOnError: true
+  continueOnError: true  
   displayName: 'npm install and build'
 
+
+- task: LambdatestResults-stage@1
 - task: stoptunnel-stage@1
