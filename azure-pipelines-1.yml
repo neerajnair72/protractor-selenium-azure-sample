@@ -16,12 +16,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
   
-- task: configuration-stage@1
+- task: configuration@1
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
-    tunnelOptions: '{"mitm":true,"tunnelName":"Neeraj"}'
-  
+    tunnelOptions: '{"tunnelName":"Test"}'
 
 - script: |
     npm install
@@ -31,6 +30,4 @@ steps:
   continueOnError: true  
   displayName: 'npm install and build'
 
-
-- task: LambdatestResults-stage@1
-- task: stoptunnel-stage@1
+- task: stoptunnel@1
