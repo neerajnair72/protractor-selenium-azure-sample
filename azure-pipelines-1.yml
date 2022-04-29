@@ -20,7 +20,7 @@ steps:
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
-    tunnelOptions: '{"tunnelName":"ABCDEF"}'
+  
 
 - script: |
     npm install
