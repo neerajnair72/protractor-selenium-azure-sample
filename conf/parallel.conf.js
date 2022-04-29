@@ -50,6 +50,7 @@ exports.config = {
       jasmine.getEnv().addReporter(myReporter);
   },
   onComplete: () => {
+    browser.excuteScript("lambda-status="+passed)
     browser.quit();
   }
 
