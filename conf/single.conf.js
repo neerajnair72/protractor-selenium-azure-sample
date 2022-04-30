@@ -1,6 +1,6 @@
 
 username= 'neerajn',
-accessKey=  'qJWmY51AY1vdlTC04Kh4iPttDsTgVl330z39YG4FadfqebaTSo',
+accessKey=  'VJVuN5xCCqqWFcTzYyYwHeEmaHVIkHOuMqU9TNCL247krOL9Aq',
 
 exports.config = {
   'specs': ['../specs/single.js'],
