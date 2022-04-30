@@ -4,7 +4,8 @@ describe('Add todo Lists', function () {
 
     it('Add Customer Test', function () {
 
-
+	browser.get('https://self-signed.badssl.com/');
+	
         browser.get('https://lambdatest.github.io/sample-todo-app/');
 
 	browser.driver.findElement(by.name('li1')).then(function (foundElement) {
