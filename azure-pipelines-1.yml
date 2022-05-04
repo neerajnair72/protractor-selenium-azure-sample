@@ -20,7 +20,7 @@ steps:
   inputs:
     connection: 'Demo Tunnel'
     isTunnelActivate: true
-    tunnelOptions: '{"mitm":true, "tunnelName":"TEST", "verbose":true2}'
+    tunnelOptions: '{"mitm":true, "tunnelName":"TEST", "verbose":true}'
   
 
 - script: |
