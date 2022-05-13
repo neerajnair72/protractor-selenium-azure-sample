@@ -21,10 +21,12 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
+      echo $LT_USERNAME
+      echo $LT_ACCESS_KEY
       wget https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT_Linux.zip
       apt-get install unzip
       unzip LT_Linux.zip
-      ./LT -user ${LT_USERNAME} -key ${LT_ACCESS_KEY} &
+      ./LT -user $LT_USERNAME -key $LT_ACCESS_KEY &
       sleep 30
  
   
