@@ -16,11 +16,17 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
   
-- task: configuration@1
+
+- task: Bash@3
   inputs:
-    connection: 'Demo Tunnel'
-    isTunnelActivate: true
-    tunnelOptions: '{"mitm":true, "tunnelName":"TEST", "verbose":true}'
+    targetType: 'inline'
+    script: |
+      wget https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT_Linux.zip
+      apt-get install unzip
+      unzip LT_Linux.zip
+      ./LT -user ${LT_USERNAME} -key ${LT_ACCESS_KEY} &
+      sleep 30
+ 
   
 
 - script: |
