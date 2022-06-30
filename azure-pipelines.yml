@@ -36,4 +36,4 @@ steps:
   displayName: 'npm install and build'
 
 
-- task: stoptunnel-stage@1
+- task: stoptunnel@1
