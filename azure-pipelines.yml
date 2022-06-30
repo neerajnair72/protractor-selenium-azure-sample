@@ -21,10 +21,11 @@ steps:
   displayName: 'Install Node.js'
 
 
-- task: configuration-stage@1
+- task: configuration@1
   inputs:
-    connection: 'Demo Tunnel'
+    connection: 'Tunnel'
     isTunnelActivate: true
+    tunnelOptions: '{"tunnelName":"Neeraj"}'
   
     
 - script: |
