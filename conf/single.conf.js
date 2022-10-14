@@ -8,7 +8,7 @@ exports.config = {
   seleniumAddress: 'https://'+ username +':'+ accessKey  +'@hub.lambdatest.com/wd/hub',
 
   'capabilities': {
-    'build': process.env(LT_BUILD_NAME),
+    'build': 'Single',
     'browserName': 'chrome',
     'version':'67.0',
     'platform': 'WIN10',
