@@ -10,7 +10,7 @@ exports.config = {
   'capabilities': {
     'build': 'Single',
     'browserName': 'chrome',
-    'version':'67.0',
+    'version':'103.0',
     'platform': 'WIN10',
     'video': true,
     'network': true,
