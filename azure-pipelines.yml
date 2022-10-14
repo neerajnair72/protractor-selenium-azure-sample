@@ -10,10 +10,6 @@ trigger:
 pool:
   vmImage: 'Ubuntu-latest'
 
-variables:
-  LT_USERNAME: 'neerajn'
-  LT_ACCESS_KEY: 'J3zIzXZfnxcFZDjaG5SmRb9cIUjoRtjzcX5fPsQcWxVkxBX3Lf'
-
 steps:
 
 - task: NodeTool@0
